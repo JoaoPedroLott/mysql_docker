@@ -1,0 +1,5 @@
+# Ignore o arquivo nifi.env
+mysql.env
+
+# Igonre as pastas de dados
+/data/

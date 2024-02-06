@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  MySql:
+    image: mysql:8.0.36-debian
+    container_name: MySql
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    env_file:
+      - mysql.env
+    volumes:
+      - ./data:/var/lib/mysql
